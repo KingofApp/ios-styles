@@ -30,6 +30,30 @@ This code may only be used under the MIT license.
       text-rendering: optimizeLegibility;
     };
 
+    --ios-font-common-nowrap: {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    };
+
+    /* iOS Font Styles */
+
+    --ios-font-title: {
+      /* @apply(--ios-font-common-base) */
+      font-family: 'Roboto', 'Noto', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      /* @apply(--ios-font-common-expensive-kerning); */
+      text-rendering: optimizeLegibility;
+      /* @apply(--ios-font-common-nowrap); */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+    };
+
     --ios-font-subhead: {
       /* @apply(--ios-font-common-base) */
       font-family: 'Roboto', sans-serif;
